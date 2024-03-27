@@ -55,7 +55,7 @@ const Sign = () => {
 				setErrorMessage('Invalid password(At least 8 characters, one uppercase, one lowercase, one number)');
 				return;
 			  }else{
-				await axios.post('https://dbackend-kappa.vercel.app/user/signin',{email,password}).then((resp)=>{
+				await axios.post('https://dbackend-cyan.vercel.app/user/signin',{email,password}).then((resp)=>{
 				if (resp.data.result == true) {
 					navigate("/")
 					dispatch(loadUser(email))
@@ -82,7 +82,7 @@ const Sign = () => {
 				setErrorMessage('Invalid password(At least 8 characters, one uppercase, one lowercase, one number)');
 				return;
 			  }else{
-				await axios.post('https://dbackend-kappa.vercel.app/user/signup',{username,email,password}).then((resp)=>{
+				await axios.post('https://dbackend-cyan.vercel.app/user/signup',{username,email,password}).then((resp)=>{
 				if (resp.data.result == true) {
 					navigate("/")
 					dispatch(loadGetData())
