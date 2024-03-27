@@ -18,7 +18,6 @@ import { loadUser } from './redux/actions/funAction';
 import 'react-loading-skeleton/dist/skeleton.css'
 
 // const Home = lazy(() => import('./pages/home/Home.jsx'))
-axios.defaults.withCredentials = true;
 
 function App() {
   const navigate = useNavigate()
