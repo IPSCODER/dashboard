@@ -1,0 +1,20 @@
+export const GET_DATA = "GET_DATA";
+export const GET_SINGLE_DATA = 'GET_SINGLE_DATA';
+export const GET_TOPIC = "GET_TOPIC";
+export const GET_SECTOR = 'GET_SECTOR';
+export const GET_COUNTRY = 'GET_COUNTRY';
+export const GET_PESTLE = 'GET_PESTLE';
+export const GET_REGION = 'GET_REGION';
+export const GET_SOURCE = 'GET_SOURCE';
+export const GET_START_YEAR = 'GET_START_YEAR';
+export const GET_END_YEAR = 'GET_END_YEAR';
+export const GET_INTENSITY = 'GET_INTENSITY';
+export const GET_LIKELIHOOD = 'GET_LIKELIHOOD';
+export const GET_RELEVANCE = 'GET_RELEVANCE';
+// 
+export const COMFIRM_MSG =  'COMFIRM_MSG';
+export const ORD_COLOR =  'ORD_COLOR';
+export const PAGINATION_DATA =  'PAGINATION_DATA';
+export const HAM =  'HAM';
+export const USER =  'USER';
+export const LOADING =  'LOADING';

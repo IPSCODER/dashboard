@@ -1,0 +1,184 @@
+
+.sign{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.demo{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 2%;
+	font-size: 10px;
+}
+
+.demo span{
+	background-color: var(--black);
+	color: var(--white);
+	padding: 0 10px;
+	font-size: 11px;
+}
+
+  .main {
+	width: 30%;
+	height: 70%;
+	border-radius: 0.26vw;
+	position: relative;
+	overflow: hidden;
+  }
+
+  .in{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	transition: 0.3s linear;
+  }
+  .in h2{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: var(--greyWhite);
+	font-size: 1.04vw;
+  }
+
+  .in h6{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: var(--greyWhite);
+	font-size: 0.84vw;
+	display: flex;
+	gap: 0.2vw;
+	font-weight: 400;
+  }
+	.form{
+		padding-top: 20%;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.56vw;
+  	}
+
+	.button{
+		height: 2.83vw;
+		width: 90%;
+		background-color: var(--black);
+		color: var(--white);
+		border-radius: 0.26vw;
+		font-size: 0.78vw;
+		text-transform: uppercase;
+		border: none;
+		cursor: pointer;
+		margin-top: 1vw;
+	  }
+	  .form input{
+		width: 90%;
+		height: 2.83vw;	
+		margin-top: 1vw;
+	  }
+	  .validtext{
+		font-size: 0.7vw;
+		color: red;
+		width: 90%;
+		text-align: end;
+	  }
+
+ 
+
+  @media screen and (max-width:950px) {
+	
+.sign{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+  .main {
+	width: 90%;
+	height: 80%;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+  }
+
+  .in{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	transition: 0.3s linear;
+  }
+  .in h2{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: var(--greyWhite);
+	font-size: 20px;
+  }
+
+  .in h6{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: var(--greyWhite);
+	font-size: 11px;
+	display: flex;
+	gap: 2px;
+	font-weight: 400;
+  }
+	.form{
+		padding-top: 20%;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+  	}
+
+	.button{
+		height: 40px;
+		width: 90%;
+		background-color: var(--black);
+		color: var(--white);
+		border-radius: 5px;
+		font-size: 15px;
+		text-transform: uppercase;
+		border: none;
+		margin-top: 20px;
+	  }
+	  .form input{
+		width: 90%;
+		height: 40px;
+		margin-top: 20px;
+	  }
+	  .validtext{
+		font-size: 9px;
+		color: red;
+		width: 90%;
+		text-align: end;
+	  }
+  }

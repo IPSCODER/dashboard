@@ -1,0 +1,28 @@
+.topic_sm{
+    width: 7.81vw;
+    height: 5.20vw;
+    border-radius: 0.05vw;
+    display: flex;
+    font-size: 0.7vw;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:950px) {
+    .topic_sm{
+        width: 100px;
+        height: 90px;
+        border-radius: 5px;
+        display: flex;
+        flex-grow: 1;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        color: var(--black);
+    }
+}

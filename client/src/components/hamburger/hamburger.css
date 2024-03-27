@@ -1,0 +1,114 @@
+ /* hamburger */
+ .hamburger{
+    width: 2.083vw;
+    height: 2.083vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0.14vw solid var(--black);
+    border-radius: 50%  ;
+}
+
+.container{
+    /* position: relative; */
+    width: fit-content;
+    padding: 0.52vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 11;
+
+}
+.line{
+    position: absolute;
+    width: 1.56vw;
+    height: 0.21vw;
+    background-color: var(--black);
+    border-radius: 0.07vw;
+    transition: transform .25s, opacity .35s;
+    overflow: hidden;
+}
+
+.line--top{
+    transform: translateY(-0.31vw);
+}
+.line--bottom{
+    transform: translateY(0.31vw);
+}
+
+
+.change .line{
+    background-color: var(--black) !important;
+}
+
+.change .line--top{
+    transform: rotate(45deg);
+}
+.change .line--middle{
+    transform: translateX(0.20vw);
+    display: none;
+}
+.change .line--bottom{
+    transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width:950px) {
+   /* hamburger */
+   .hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container{
+    /* position: relative; */
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 11;
+
+}
+.line{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 1px;
+    transition: transform .25s, opacity .35s;
+    overflow: hidden;
+}
+
+.line--top{
+    transform: translateY(-6px);
+}
+.line--bottom{
+    transform: translateY(6px);
+}
+
+
+.change .line{
+    background-color: var(--black) !important;
+}
+
+.change .line--top{
+    transform: rotate(45deg);
+}
+.change .line--middle{
+    transform: translateX(4px);
+    display: none;
+}
+.change .line--bottom{
+    transform: rotate(-45deg);
+}
+}
