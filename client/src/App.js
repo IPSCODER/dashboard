@@ -26,7 +26,7 @@ function App() {
   const dispatch = useDispatch()
 
    const userLog = async () =>{
-    await axios.get("http://localhost:5000").then((resp)=>{
+    await axios.get("https://dbackend-peach.vercel.app/").then((resp)=>{
      if (resp.data.status === true) {
       //  setLogin(true)
       dispatch(loadUser(resp.data.email))
