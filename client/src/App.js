@@ -26,7 +26,7 @@ function App() {
 
    const userLog = async () =>{
      console.log("one");
-     await axios.get("https://dbackend-cyan.vercel.app/").then((resp)=>{
+     await axios.get("https://dbackend-cyan.vercel.app").then((resp)=>{
        console.log("two",resp);
      if (resp.data.status === true) {
        console.log("three");
