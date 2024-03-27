@@ -27,7 +27,7 @@ function App() {
 
    const userLog = async () =>{
      console.log("first");
-    await axios.get("https://dbackend-kappa.vercel.app/").then((resp)=>{
+    await axios.get("https://dbackend-cyan.vercel.app/").then((resp)=>{
      if (resp.data.status === true) {
        console.log("true");
       //  setLogin(true)
