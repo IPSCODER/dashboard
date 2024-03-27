@@ -42,6 +42,7 @@ function App() {
   }
 
   useEffect(()=>{
+    navigate('/sign')
     userLog()
   },[])
   return (
