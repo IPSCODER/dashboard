@@ -26,20 +26,21 @@ function App() {
   const dispatch = useDispatch()
 
    const userLog = async () =>{
-   try{
+     console.log("one");
      await axios.get("https://dbackend-cyan.vercel.app").then((resp)=>{
+       console.log("two");
      if (resp.data.status === true) {
+       console.log("three");
       //  setLogin(true)
       dispatch(loadUser(resp.data.email))
       navigate("/")
       dispatch(loadGetData())
      }else{ 
+       console.log("four");
     //  setLogin(false)
      navigate('/sign')
      }
-   })
-   }
-   catch((err)=>{
+   }).catch((err)=>{
      console.log(err);
    })
   }
