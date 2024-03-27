@@ -89,7 +89,7 @@ const get_relevance = (data) =>({
 
 export const loadGetData =  () =>{
     return function(dispatch){
-        axios.get("http://localhost:5000/test/").then(resp=>{
+        axios.get("https://dbackend-peach.vercel.app/test/").then(resp=>{
             dispatch(get_data(resp.data))
             dispatch(loadLoading(false))
             const uniqueNames = findUniqueValues(resp.data, 'likelihood');
