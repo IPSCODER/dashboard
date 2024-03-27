@@ -26,16 +26,13 @@ function App() {
   const dispatch = useDispatch()
 
    const userLog = async () =>{
-     console.log("first");
-    await axios.get("https://dbackend-cyan.vercel.app/").then((resp)=>{
+    await axios.get("http://localhost:5000").then((resp)=>{
      if (resp.data.status === true) {
-       console.log("true");
       //  setLogin(true)
       dispatch(loadUser(resp.data.email))
       navigate("/")
       dispatch(loadGetData())
      }else{ 
-       console.log("false");
     //  setLogin(false)
      navigate('/sign')
      }
@@ -45,7 +42,6 @@ function App() {
   }
 
   useEffect(()=>{
-    console.log("second");
     userLog()
   },[])
   return (
