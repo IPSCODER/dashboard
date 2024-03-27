@@ -46,7 +46,7 @@ const verifyUser = (req,res,next) =>{
     }
 }
 
-app.use("/test",verifyUser,router)
+
 app.use("/user",userRouter)
 
 app.get("/logout",(req,res)=>{
@@ -57,7 +57,7 @@ app.get("/logout",(req,res)=>{
 app.get("/",verifyUser,(req,res)=>{
     return res.json({status:true,email:req.pravin})
 })
-
+app.use("/test",verifyUser,router)
 
 
 mongoose.connect(process.env.MONGO_URL).then(() =>{
