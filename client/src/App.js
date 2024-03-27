@@ -27,8 +27,8 @@ function App() {
 
    const userLog = async () =>{
      console.log("one");
-     await axios.get("https://dbackend-cyan.vercel.app").then((resp)=>{
-       console.log("two");
+     await axios.get("https://jsonplaceholder.typicode.com/todos/").then((resp)=>{
+       console.log("two",resp);
      if (resp.data.status === true) {
        console.log("three");
       //  setLogin(true)
