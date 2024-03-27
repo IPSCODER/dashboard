@@ -25,8 +25,8 @@ function App() {
 
   const dispatch = useDispatch()
 
-   const userLog =  () =>{
-   axios.get("https://dbackend-cyan.vercel.app").then((resp)=>{
+   const userLog = async () =>{
+   await axios.get("https://dbackend-cyan.vercel.app").then((resp)=>{
      if (resp.data.status === true) {
       //  setLogin(true)
       dispatch(loadUser(resp.data.email))
