@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors({
-    origin:["https://dashboard-gold-nu-95.vercel.app/"],
+    origin:["https://dashboard-gold-nu-95.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }));
@@ -46,12 +46,6 @@ const verifyUser = (req,res,next) =>{
     }
 }
 
-
-app.get("/",verifyUser,(req,res)=>{
-    return res.json({status:true,email:req.pravin})
-})
-
-
 app.use("/test",verifyUser,router)
 app.use("/user",userRouter)
 
@@ -60,6 +54,9 @@ app.get("/logout",(req,res)=>{
     res.json({logout:true})
 })
 
+app.get("/",verifyUser,(req,res)=>{
+    return res.json({status:true,email:req.pravin})
+})
 
 
 
