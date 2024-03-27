@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors({
-    origin:["https://dashboard-gold-nu-95.vercel.app/"],
+    origin:["https://dashboard-gold-nu-95.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }));
